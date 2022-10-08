@@ -1,0 +1,408 @@
+/* fonts */
+
+@font-face {
+    font-family: "UniQAIDAR_Talabat 01";
+    src: url("../fonts/UniQAIDAR_Talabat01.woff2") format("woff2"), url("../fonts/UniQAIDAR_Talabat01.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "UniQAIDAR_Talabat 01";
+    src: url("../fonts/UniQAIDAR_Talabat01.woff2") format("woff2"), url("../fonts/UniQAIDAR_Talabat01.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "UniQAIDAR_Talabat 01";
+    src: url("../fonts/UniQAIDAR_Talabat01.woff2") format("woff2"), url("../fonts/UniQAIDAR_Talabat01.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "UniQAIDAR_Talabat 01";
+    src: url("../fonts/UniQAIDAR_Talabat01.woff2") format("woff2"), url("../fonts/UniQAIDAR_Talabat01.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Jozoor Font";
+    src: url("../fonts/AraJozoor-Regular.woff2") format("woff2"), url("../fonts/AraJozoor-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* Main  Rules */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    direction: rtl;
+    font-family: "Jozoor Font", "sans-serif";
+    background-color: #fafafa;
+}
+
+:root {
+    --clr-primary: #489ddc;
+    --clr-secondry: #2d2d2d;
+    --tran-primary: 0.4s;
+    --jozor-font: "Jozoor Font", "sans-serif";
+    --talabat-font: "UniQAIDAR_Talabat 01", "sans-serif";
+}
+
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    background-color: var(--clr-secondry);
+    width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--clr-primary);
+    min-height: 180px;
+}
+
+
+/* ===== Main Classes ===== */
+
+
+/* Colors */
+
+.clr-primary {
+    color: var(--clr-primary);
+}
+
+.clr-secondry {
+    color: var(--clr-secondry);
+}
+
+.back-primary {
+    background-color: var(--clr-primary);
+}
+
+.back-secondry {
+    background-color: var(--clr-secondry);
+}
+
+.light-text {
+    color: #818181;
+}
+
+
+/* Fonts */
+
+.jozor-font {
+    font-family: var(--jozor-font);
+}
+
+.talabat-font {
+    font-family: var(--talabat-font);
+}
+
+
+/* Some Classes */
+
+.under-line-title::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: var(--clr-secondry);
+    border-radius: 3px;
+    display: block;
+    margin: auto;
+}
+
+.index--1 {
+    z-index: -1;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+
+/* centered with position  */
+
+.center-position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* centered with flex */
+
+.center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ================ Navbar ================ */
+
+.nav-link {
+    color: var(--clr-secondry);
+    font-size: 19px;
+    transition: var(--tran-primary);
+}
+
+.nav-link:hover {
+    color: var(--clr-primary);
+}
+
+.free-consultation {
+    background-color: var(--clr-primary);
+    color: #fff;
+    border-radius: 7px;
+    padding: 7px 20px;
+    border: 1px solid var(--clr-primary);
+    transition: var(--tran-primary);
+    font-size: 19px;
+}
+
+.free-consultation:hover {
+    background-color: transparent;
+}
+
+
+/* =================== Landing ====================== */
+
+.landing-text h1 {
+    font-family: var(--talabat-font);
+    line-height: 76px;
+    font-size: 50px;
+}
+
+
+/* ================ Our Diffrent  ====================== */
+
+.our-different {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.our-different h2 {
+    font-family: var(--talabat-font);
+    position: relative;
+}
+
+.our-different h2 img {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    z-index: -1;
+}
+
+.our-different-content>img {
+    width: 80%;
+    margin: auto;
+}
+
+
+/* ================== Success stories ================== */
+
+.success-stories-content {
+    border-radius: 21px;
+    background-color: var(--clr-primary);
+    max-width: 975px;
+    margin: 15px auto;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+
+/* ================== Our Service ============== */
+
+.our-service-text img {
+    top: -120px;
+}
+
+@media (min-width: 1200px) {
+    .our-service-text img {
+        position: absolute;
+    }
+}
+
+@media (max-width: 767px) {
+    .our-service-text img {
+        width: 200px;
+    }
+    .our-service-image img {
+        margin-top: 20px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .our-service {
+        margin-top: 150px;
+    }
+}
+
+.our-service-image {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .our-service-image {
+        min-height: 510px;
+    }
+}
+
+.our-service-image img {
+    width: 80%;
+    display: block;
+}
+
+
+/* ================== Start FAQ ====================== */
+
+.faq-box {
+    max-width: 975px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+    border: 1px solid #cacaca;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.faq-box i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.faq-box-title {
+    transition: var(--tran-primary);
+}
+
+.faq-box-title.active {
+    background-color: var(--clr-primary);
+}
+
+.faq-box-title.active span {
+    color: #fff;
+}
+
+.faq-box-title.active i {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+
+/* ======================= Footer ================= */
+
+.footer {
+    position: relative;
+    overflow: hidden;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    background-color: var(--clr-secondry);
+    width: 50%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+}
+
+.footer-address-box i {
+    width: 26px;
+    height: 26px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+
+/* ========================== About Us page  ========================= */
+
+
+/* testimonilas */
+
+.testi-box {
+    max-width: 625px;
+    background-image: url("../images/testimonials_back.svg");
+    background-position: center 40px;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    min-height: 270px;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.testi-box span {
+    position: absolute;
+    bottom: 30px;
+}
+
+.testi-box>img {
+    position: absolute;
+}
+
+.testi-box>img.top {
+    right: -42px;
+    top: 0;
+}
+
+.testi-box>img.bottom {
+    left: -42px;
+    bottom: 0;
+}
+
+.testi-nav {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    color: var(--clr-primary);
+}
+
+.testi-nav-container {
+    z-index: 333;
+}
